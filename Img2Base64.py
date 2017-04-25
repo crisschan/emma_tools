@@ -1,5 +1,17 @@
-#!/usr/bin/python
-#encoding=utf8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+#__from__ = 'EMMATools'
+#__title__='PyCharm'
+#__author__ = 'chancriss'
+#__mtime__ = '20160908'
+#__instruction__=' 将图片变成base64编码，然后在web中打开，不用引入图片外部图片文件'
+
+
+
+
+
 import base64
 import os
 

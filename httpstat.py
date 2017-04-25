@@ -5,7 +5,10 @@
 # https://curl.haxx.se/libcurl/c/curl_easy_getinfo.html
 # https://curl.haxx.se/libcurl/c/easy_getinfo_options.html
 # http://blog.kenweiner.com/2014/11/http-request-timings-with-curl.html
-   
+# __author_='from intenet'
+# __data__='2016'
+# __from__='EmmaTools'
+# __using__= shell 'python httpstat.py http://blog.csdn.net/crisschan
 from __future__ import print_function
 
 import os

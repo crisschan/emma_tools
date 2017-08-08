@@ -21,9 +21,16 @@ class Img2Base64(object):
     '''
     def __init__(self,sImgDir):
         fr = open(sImgDir, 'rb')
-        self.hexImg=base64.b64encode(fr.read())
+        self.__hexImg=base64.b64encode(fr.read())
         fr.close()
+    @property
+    def HexImg(self):
+        return self.__hexImg
 
+
+if __name__=='__main__':
+    img =Img2Base64('2.jpeg')
+    print '<img src = "data:image/bmp;base64,'+img.HexImg+'\"/>'
 
 
 '''if __name__=='__main__':

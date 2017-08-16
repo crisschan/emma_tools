@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-#__from__ = 'EMMATools'
+#__from__ = 'EMMATools https://github.com/crisschan/EMMATools'
 #__title__='PyCharm'
 #__author__ = 'chancriss'
 #__mtime__ = '20160908'

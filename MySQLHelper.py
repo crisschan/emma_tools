@@ -3,7 +3,7 @@
 # __author_='crisschan'
 # __data__='20170401'
 
-# __from__='EmmaTools'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 
 import MySQLdb
 

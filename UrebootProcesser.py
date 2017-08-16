@@ -3,7 +3,7 @@
 
 # __author_='crisschan'
 # __data__='20160908'
-# __from__='EmmaTools '
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 # 修改脚本后不用重启服务，调用watchdog不用启动识别修改
 #x
 import os, sys, time, subprocess

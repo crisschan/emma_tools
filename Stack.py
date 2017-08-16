@@ -2,7 +2,7 @@
 #!/usr/bin/env python
 # __author_='crisschan'
 # __data__='20161130'
-# __from__='EmmaTools'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 #栈的操作
 class Stack(object):
     def __init__(self):

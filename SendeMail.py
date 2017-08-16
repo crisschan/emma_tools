@@ -2,7 +2,7 @@
 #coding:utf-8
 # __author_='crisschan'
 # __data__='20160908'
-# __from__='EmmaTools'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 # 发送邮件
 import smtplib
 from email.mime.text import MIMEText

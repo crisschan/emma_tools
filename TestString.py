@@ -2,7 +2,7 @@
 # !/usr/bin/env python
 # __author_='crisschan'
 # __data__='20160908'
-# __from__='EmmaTools'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 # 测试需要处理字符串的类
 import random
 import re

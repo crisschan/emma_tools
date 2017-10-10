@@ -58,30 +58,47 @@ class testerstr(object):
         :return: 前后边界一致的中间部分字符串 []
         '''
         reStrList = []
-        starttemplist = self.__Getsubindex(content, startStr)
+        if content is None or content=='':
+            return reStrList
+        if startStr!='' and content.find(startStr)<0:
+            startStr=''
+        if endStr!='' and content.find(endStr)<0:
+            endStr=''
 
-        nStartlen = len(startStr)
-        startIndexlist = []
-        for ntemp in starttemplist:
-            startIndexlist.append(ntemp + nStartlen)
-        endIndexlist = self.__Getsubindex(content, endStr)
-        print startIndexlist
-        print endIndexlist
-        astep = 0
-        bstep = 0
-        dr = re.compile(r'<[^>]+>', re.S)
+        if startStr=='':
+            reStrList.append(content[:content.find(endStr)])
+            return reStrList
+        elif endStr=='':
+            reStrList.append(content[content.find(startStr)+len(startStr):])
+            return reStrList
+        elif startStr=='' and  endStr=='':
+            reStrList.append(content)
+            return reStrList
+        else:
+            starttemplist = self.__Getsubindex(content, startStr)
 
-        while astep < len(startIndexlist) and bstep < len(endIndexlist):
-            while startIndexlist[astep] >= endIndexlist[bstep]:
+            nStartlen = len(startStr)
+            startIndexlist = []
+            for ntemp in starttemplist:
+                startIndexlist.append(ntemp + nStartlen)
+            endIndexlist = self.__Getsubindex(content, endStr)
+            print startIndexlist
+            print endIndexlist
+            astep = 0
+            bstep = 0
+            dr = re.compile(r'<[^>]+>', re.S)
+
+            while astep < len(startIndexlist) and bstep < len(endIndexlist):
+                while startIndexlist[astep] >= endIndexlist[bstep]:
+                    bstep = bstep + 1
+                strTemp = self.__GetMiddleStr(content, startIndexlist[astep], endIndexlist[bstep])
+                strTemp = dr.sub('', strTemp)
+
+                reStrList.append(strTemp)
+                astep = astep + 1
                 bstep = bstep + 1
-            strTemp = self.__GetMiddleStr(content, startIndexlist[astep], endIndexlist[bstep])
-            strTemp = dr.sub('', strTemp)
 
-            reStrList.append(strTemp)
-            astep = astep + 1
-            bstep = bstep + 1
-
-        return reStrList
+            return reStrList
 '''
 if __name__=="__main__":
     tStr = testerstr()

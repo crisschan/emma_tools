@@ -3,10 +3,11 @@
 # __author_='crisschan'
 # __data__='20160908'
 # __from__='EmmaTools https://github.com/crisschan/EMMATools'
-# 测试需要处理字符串的类
+#           测试需要处理字符串的类:
+#           修改了方法添加了@classmethod装饰器
 import random
 import re
-class testerstr(object):
+class TestStr(object):
     def __GetMiddleStr(self,content, startPos, endPos):
         '''
         :根据开头和结尾字符串获取中间字符串
@@ -48,8 +49,8 @@ class testerstr(object):
 
             apos = content.find(subStr)
         return alist
-
-    def GetAllMiddleStr(self,content, startStr, endStr):
+    @classmethod
+    def GetAllMiddleStr(cls_obj,content, startStr, endStr):
         '''
 
         :param content: 原始string
@@ -75,13 +76,13 @@ class testerstr(object):
             reStrList.append(content)
             return reStrList
         else:
-            starttemplist = self.__Getsubindex(content, startStr)
+            starttemplist = cls_obj().__Getsubindex(content, startStr)
 
             nStartlen = len(startStr)
             startIndexlist = []
             for ntemp in starttemplist:
                 startIndexlist.append(ntemp + nStartlen)
-            endIndexlist = self.__Getsubindex(content, endStr)
+            endIndexlist = cls_obj().__Getsubindex(content, endStr)
             print startIndexlist
             print endIndexlist
             astep = 0
@@ -91,7 +92,7 @@ class testerstr(object):
             while astep < len(startIndexlist) and bstep < len(endIndexlist):
                 while startIndexlist[astep] >= endIndexlist[bstep]:
                     bstep = bstep + 1
-                strTemp = self.__GetMiddleStr(content, startIndexlist[astep], endIndexlist[bstep])
+                strTemp = cls_obj().__GetMiddleStr(content, startIndexlist[astep], endIndexlist[bstep])
                 strTemp = dr.sub('', strTemp)
 
                 reStrList.append(strTemp)
@@ -101,7 +102,6 @@ class testerstr(object):
             return reStrList
 '''
 if __name__=="__main__":
-    tStr = testerstr()
     strgg = '24214jnjkanrhquihrghjw<>eufhuin/jfghs<>ajfjsanfghjkg/hjkghj<>kghjfasd/sdaf'
-    print tStr.GetAllMiddleStr(strgg,'<>','/')
+    print TestStr.GetAllMiddleStr(strgg,'<>','/')
 '''

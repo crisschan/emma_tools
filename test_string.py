@@ -83,8 +83,7 @@ class TestString(object):
             for ntemp in starttemplist:
                 startIndexlist.append(ntemp + nStartlen)
             endIndexlist = cls_obj().__Getsubindex(content, endStr)
-            print startIndexlist
-            print endIndexlist
+
             astep = 0
             bstep = 0
             dr = re.compile(r'<[^>]+>', re.S)
@@ -103,5 +102,5 @@ class TestString(object):
 '''
 if __name__=="__main__":
     strgg = '24214jnjkanrhquihrghjw<>eufhuin/jfghs<>ajfjsanfghjkg/hjkghj<>kghjfasd/sdaf'
-    print TestStr.GetAllMiddleStr(strgg,'<>','/')
+    print TestString.GetAllMiddleStr(strgg,'<>','/')
 '''

@@ -50,7 +50,7 @@ class TestString(object):
             apos = content.find(subStr)
         return alist
     @classmethod
-    def GetAllMiddleStr(cls_obj,content, startStr, endStr):
+    def GetTestString(cls_obj,content, startStr, endStr):
         '''
 
         :param content: 原始string
@@ -102,5 +102,5 @@ class TestString(object):
 '''
 if __name__=="__main__":
     strgg = '24214jnjkanrhquihrghjw<>eufhuin/jfghs<>ajfjsanfghjkg/hjkghj<>kghjfasd/sdaf'
-    print TestString.GetAllMiddleStr(strgg,'<>','/')
+    print TestString.GetTestString(strgg,'<>','/')
 '''

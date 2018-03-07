@@ -7,7 +7,7 @@
 #           修改了方法添加了@classmethod装饰器
 import random
 import re
-class TestStr(object):
+class TestString(object):
     def __GetMiddleStr(self,content, startPos, endPos):
         '''
         :根据开头和结尾字符串获取中间字符串

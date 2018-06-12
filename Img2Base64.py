@@ -25,12 +25,13 @@ class Img2Base64(object):
         fr.close()
     @property
     def HexImg(self):
-        return self.__hexImg
+        return self.__hexImg.decode()
 
 
 if __name__=='__main__':
-    img =Img2Base64('2.jpeg')
-    print '<img src = "data:image/bmp;base64,'+img.HexImg+'\"/>'
+    img =Img2Base64('img/2.png')
+
+    print('data:image/bmp;base64,'+img.HexImg)
 
 
 '''if __name__=='__main__':

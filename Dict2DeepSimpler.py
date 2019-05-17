@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#__from__ = 'PythonSpace'
-#__title__='PyCharm'
-#__author__ = 'chancriss'
-#__mtime__ = '2018/1/8'
-#__instruction__=''
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 

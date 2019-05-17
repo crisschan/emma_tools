@@ -3,7 +3,7 @@
 # __author_='crisschan'
 # __data__='20161130'
 # __from__='EmmaTools https://github.com/crisschan/EMMATools'
-#生成测试要用的json
+# __instruction__生成测试要用的json
 
 from Stack import Stack
 class InitTestJson(object):
@@ -72,8 +72,7 @@ class InitTestJson(object):
             nPos=nPos+1
         self.listbrace=sorted(self.listbrace, key=lambda x: x[0])
         self.listbrackets = sorted(self.listbrackets, key=lambda x: x[0])
-        print self.listbrace
-        print self.listbrackets
+
     def createTestJson(self,Type,number,count):
         '''
         Args:
@@ -106,10 +105,10 @@ class InitTestJson(object):
                 startpos = self.listbrackets[number][0]+1
                 endpos = self.listbrackets[number][1]-1
                 prestr = self.strJsonTemplate[0:endpos ]
-                print prestr
+
 
                 poststr = self.strJsonTemplate[endpos + 1:]
-                print poststr
+
                 strRe = prestr
                 while count-1 > 0:
                     strRe = strRe +','+ self.strJsonTemplate[startpos:endpos]
@@ -128,7 +127,7 @@ if __name__=='__main__':
     data1 = {'i':{'a': 123, 'b': 789},'k':{'c': 456, 'd': {'b': 789, 'c': 456, 'a': 123}}}
     data2 = {'a': 123, 'b': 789,'c': [{'a': 123, 'b': 789}]}
     I1= InitTestJson(data2)
-    print I1.createTestJson('[',0,4)
+    print(I1.createTestJson('[',0,4))
 
 
     #print str(data1)[0:81]

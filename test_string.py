@@ -3,7 +3,7 @@
 # __author_='crisschan'
 # __data__='20160908'
 # __from__='EmmaTools https://github.com/crisschan/EMMATools'
-#           测试需要处理字符串的类:
+# __instruction__= 测试需要处理字符串的类:
 #           修改了方法添加了@classmethod装饰器
 import random
 import re

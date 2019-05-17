@@ -3,7 +3,7 @@
 # __author_='crisschan'
 # __data__='20160908'
 # __from__='EmmaTools'
-#计算两经纬度间的距离
+#__instruction__=计算两经纬度间的距离
 from math import radians, cos, sin, asin, sqrt
 class GetDistance(object):
     def __init__(self,lon1, lat1, lon2, lat2): # 经度1，纬度1，经度2，纬度2 （十进制度数）

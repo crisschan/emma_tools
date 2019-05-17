@@ -3,7 +3,7 @@
 # __author_='crisschan'
 # __data__='20160908'
 # __from__='EmmaTools https://github.com/crisschan/EMMATools'
-# 发送邮件
+# __instruction__=发送邮件
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -81,7 +81,7 @@ class sendemail(object):
             smtp.sendmail(self.sender, self.receiver, self.msg.as_string())
             smtp.quit()
             return 1
-        except Exception, e:
+        except Exception as e:
             return e
 
 '''

@@ -5,7 +5,7 @@
 #__title__='PyCharm'
 #__author__ = 'chancriss'
 #__mtime__ = '2017/10/9'
-#__instruction__='rotate img'
+#__instruction__='图片选择'
 
 from PIL import Image
 from numpy import *

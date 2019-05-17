@@ -4,8 +4,8 @@
 # __author_='crisschan'
 # __data__='20160908'
 # __from__='EmmaTools https://github.com/crisschan/EMMATools'
-# 修改脚本后不用重启服务，调用watchdog不用启动识别修改
-#x
+# __instruction__=修改脚本后不用重启服务，调用watchdog不用启动识别修改
+
 import os, sys, time, subprocess
 
 from watchdog.observers import Observer
@@ -13,7 +13,7 @@ from watchdog.events import FileSystemEventHandler
 
 
 def log(s):
-    print '[Monitor] %s' % s
+    print('[Monitor] %s' % s)
 
 
 class MyFileSystemEventHander(FileSystemEventHandler):
@@ -76,5 +76,5 @@ if __name__ == '__main__':
     command = argv
 
     path = os.path.abspath('.')
-    print path
+    print(path)
     start_watch(path, None)

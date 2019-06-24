@@ -24,3 +24,6 @@ class VideoChange(object):
         song.export(self.__video_path, format='mp3', bitrate='64k')
 
 
+if __name__ == '__main__':
+    VideoChange('自动化通用架构.mp3')
+

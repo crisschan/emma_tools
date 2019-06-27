@@ -1,23 +1,54 @@
-# HI_PO是一个PO模式的UI测试框架
+# EMMA_Tools
 
-有些代码没有作者，原始是没有办法写出来作者名字~~
+收集我测试过程中使用的一些常用的代码、工具类等
+## 说明
 
-## pages模块
+EMMA_Tools是我自己积累的一些内容，其中有来自网络的，有一些是自己总结的，都是平时工作需要用到的内容。
+代码基于python3.x及其以上版本稳定，python2.x版本目前还不知道！
+## 内容说明
+### hi_po_Exp
 
-pages模块存放全部PO脚本，一个Page一个py脚本.
-pages模块下的脚本命名建议页面名称
+hi_po基于Selenium3.0的PO模式的WebUI测试框架
 
-## test_case
+### dict_reduce_deep.py
+将一个深度非常深的嵌套非常多的dict变成深度为1的dict（无嵌套的）
+### get_dirAndfiles.py
+获取各种目录文件
+### git_distance.py
 
-这个模块里面存储的是测试用例，是业务流程
-该模块下建议命名就以测试流程名称定义
+计算两经纬度间的距离
+### httpstat.py
+httpstat 应该是一个 python 封装后的 curl 工具能够展现 一些客户端连接网站的时间消耗，最近在看tls 感觉挺有用处的 简单学习一下
+### info_hidden2img.py
 
-其中：param是excel编写的测试用例文档（也就是测试数据）
-     config是各种外部链接的配置
+将信息隐藏到图片中
 
+### rotate_img.py
+图片旋转
 
-## driver
- 
-存放driver文件
+### sende_mail.py
 
+发送email
 
+### slipt_img.py
+
+图片切割
+
+### stack.py
+
+栈的实现
+### sub_json_loop.py
+生成测试要用的json
+
+### test_string.py
+
+测试需要处理字符串的类:修改了方法添加了@classmethod装饰器
+
+### ureboot_processer.py
+
+修改脚本后不用重启服务，调用watchdog不用启动识别修改
+### url_code.py
+
+urldecode and urlencode
+### video_change.py
+视频文件的修改

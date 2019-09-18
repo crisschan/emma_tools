@@ -25,5 +25,6 @@ class VideoChange(object):
 
 
 if __name__ == '__main__':
-    VideoChange('自动化通用架构.mp3')
+    VideoChange('奈飞持续交付实践探寻上.mp3')
+    VideoChange('奈飞持续交付实践探寻下.mp3')
 

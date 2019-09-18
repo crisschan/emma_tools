@@ -99,8 +99,8 @@ class TestString(object):
                 bstep = bstep + 1
 
             return reStrList
-'''
-if __name__=="__main__":
-    strgg = '24214jnjkanrhquihrghjw<>eufhuin/jfghs<>ajfjsanfghjkg/hjkghj<>kghjfasd/sdaf'
-    print TestString.GetTestString(strgg,'<>','/')
-'''
+
+# if __name__=="__main__":
+#     strgg = '24214jnjkanrhquihrghjw<>eufhuin/jfghs<>ajfjsanfghjkg/hjkghj<>kghjfasd/sdaf'
+#     print(TestString.GetTestString(strgg,'<a href="','/'))
+

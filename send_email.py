@@ -93,7 +93,7 @@ if __name__=='__main__':
     subject = 'python email test'
     smtpserver = 'smtp.qq.com'
     username = '2053581240'
-    password = 'haihaigame123'
+    password = ''
     stmpconnect = 'smtp.qq.com'
     transMsg = '等大大发发'+str(time.time())
     attfile = ['/Users/chancriss/Desktop/work/95.pic.jpg','/Users/chancriss/Desktop/work/95.pic.jpg','/Users/chancriss/Desktop/work/95.pic.jpg']

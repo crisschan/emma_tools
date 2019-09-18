@@ -29,12 +29,8 @@ class Img2Base64(object):
 
 
 if __name__=='__main__':
-    img =Img2Base64('img/2.png')
+    img =Img2Base64('WechatIMG7.png')
 
     print('data:image/bmp;base64,'+img.HexImg)
 
 
-'''if __name__=='__main__':
-
-    print ' <img src = "data:image/bmp;base64,'+Img2Base64('/Users/chancriss/Desktop/WorkSpace/PythonSpace/EmmaTools/ocr.jpg').hexImg+'\"/>'
-'''

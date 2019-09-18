@@ -55,7 +55,7 @@ class HiPOUnit(unittest.TestCase):
         return suite
 
     @staticmethod
-    def TestCaseWithFunc(testcase_class, testcase_fun, param=None):
+    def TestCaseWithFuncc(testcase_class, testcase_fun, param=None):
         '''
         Create a suite containing one test taken from the given
             subclass, passing them the parameter 'param'.

@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 import time
-class sendemail(object):
+class SendeMail(object):
 
     def __init__(self,sender,receiver,subject,username,password,stmpconnect,transMsg):
         '''

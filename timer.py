@@ -9,7 +9,7 @@
 
 import time
 # 这是装饰函数
-class timer(object):
+class Timer(object):
 
     def timer(func):
         def wrapper(*args, **kw):
@@ -31,7 +31,7 @@ class timer(object):
 
 if __name__ == '__main__':
 
-    @timer.timer
+    @Timer.timer
     def want_sleep(sleep_time):
         time.sleep(sleep_time)
 

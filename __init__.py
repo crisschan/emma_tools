@@ -4,7 +4,11 @@
 # @Author     : CrissChan
 # @Site       : https://blog.csdn.net/crisschan
 # @File       : __init__.py.py
-# @instruction:
+# @instruction_file:
+#               1、get-pip.py：安装pip，python3 get-pip.py
+#               2、httpstat.py：访问状态 python3 httpstat.py http://blog.csdn.net/crisschan
+#               3、ureboot_processer.py：支持热修复， nohup ./UrebootProcesser xxxx.py &
+# @instruction_module:
 #               1、Dict2DeepSimpler：将一个深度非常深的dict变成深度为1的dict（无嵌套的）
 #               2、DirAndFiles：获取各种目录文件：
 #               3、GetDistance：计算两经纬度间的距离
@@ -20,9 +24,7 @@
 #               13、VideoChange:视频修改码率的，为创建各种不同测试使用的视频文件做准备
 #               14、workWechat:计算耗时的装饰器封装
 #                   MSGTYPE:message类型
-#
-
-
+#               15、ZipMemless:低内存压缩
 
 from dict_reduce_deep import Dict2DeepSimpler
 from get_dirAndfiles import DirAndFiles
@@ -39,5 +41,5 @@ from test_string import TestString
 from timer import Timer
 from video_change import VideoChange
 from work_webchat_robot import workWechat,MSGTYPE
-
+from zip_memless import ZipMemless
 

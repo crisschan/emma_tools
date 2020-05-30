@@ -40,6 +40,6 @@ from init_test_json import InitTestJson
 from test_string import TestString
 from timer import Timer
 from video_change import VideoChange
-from work_webchat_robot import workWechat,MSGTYPE
+from work_webchat_robot import workWechat, MSGTYPE
 from zip_memless import ZipMemless
-
+from remover import Remover

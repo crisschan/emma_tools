@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/9/2 4:38 PM
 # @Author  : Criss Chan
-# @Site    : https://blog.csdn.net/crisschan
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 # @File    : image_chage.py
 # @Software: PyCharm
 # @instruction：所有图片的转换类

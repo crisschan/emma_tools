@@ -6,7 +6,7 @@
 #__author__ = 'chancriss'
 #__mtime__ = '2018/4/9'
 #__instruction__='将信息隐藏到图片中'
-
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 from PIL import Image
 import sys
 

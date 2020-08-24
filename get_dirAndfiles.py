@@ -5,6 +5,7 @@
 #__title__='PyCharm'
 #__author__ = 'chancriss'
 #__mtime__ = '2017/10/9'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 #__instruction__='获取各种目录文件'
 import os
 class DirAndFiles(object):

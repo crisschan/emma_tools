@@ -2,7 +2,7 @@
 #!/usr/bin/env python
 # __author_='crisschan'
 # __data__='20160908'
-# __from__='EmmaTools'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 #__instruction__=计算两经纬度间的距离
 from math import radians, cos, sin, asin, sqrt
 class GetDistance(object):

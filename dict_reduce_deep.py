@@ -7,6 +7,7 @@
 #__from__ = 'PythonSpace'
 #__title__='PyCharm'
 #__author__ = 'chancriss'
+# __from__='EmmaTools https://github.com/crisschan/EMMATools'
 #__mtime__ = '2018/1/4'
 #__instruction__='将一个深度非常深的dict变成深度为1的dict（无嵌套的）'
 

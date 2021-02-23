@@ -48,18 +48,18 @@ class SplitImg(object):
         else:
             print('不合法的行列切割参数！')
 
-if __name__=="__main__":
-    src = '/Users/chancriss/Downloads/1/1.png'
-    if os.path.isfile(src):
-        dstpath = '/Users/chancriss/Downloads/1/'
-        if (dstpath == '') or os.path.exists(dstpath):
-            row = 3
-            col = 4
-            if row > 0 and col > 0:
-                SplitImg(src, row, col, dstpath)
-            else:
-                print('无效的行列切割参数！')
-        else:
-            print('图片输出目录 %s 不存在！' % dstpath)
-    else:
-        print('图片文件 %s 不存在！' % src)
+# if __name__=="__main__":
+#     src = '/Users/chancriss/Downloads/1/1.png'
+#     if os.path.isfile(src):
+#         dstpath = '/Users/chancriss/Downloads/1/'
+#         if (dstpath == '') or os.path.exists(dstpath):
+#             row = 3
+#             col = 4
+#             if row > 0 and col > 0:
+#                 SplitImg(src, row, col, dstpath)
+#             else:
+#                 print('无效的行列切割参数！')
+#         else:
+#             print('图片输出目录 %s 不存在！' % dstpath)
+#     else:
+#         print('图片文件 %s 不存在！' % src)

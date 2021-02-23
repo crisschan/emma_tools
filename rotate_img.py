@@ -70,13 +70,13 @@ class RotateImg(object):
         sTargetRotate = self.sTargetImgFile[:self.sTargetImgFile.find('.')] + '_LefttoRight' + self.sTargetImgFile[self.sTargetImgFile.find('.'):]
 
         pil_im.save(sTargetRotate)
-if __name__=='__main__':
-    ri  = RotateImg('0001.jpg','5.jpg')
-    ri.LefttoRight()
-    ri.ToptoBottom()
-    ri.Clockwise90()
-    ri.Counterclockwise90()
-    ri.rotate(nRotate=45)
+# if __name__=='__main__':
+#     ri  = RotateImg('0001.jpg','5.jpg')
+#     ri.LefttoRight()
+#     ri.ToptoBottom()
+#     ri.Clockwise90()
+#     ri.Counterclockwise90()
+#     ri.rotate(nRotate=45)
 
 
 

@@ -18,6 +18,7 @@ venv/*
 # Autodoc
 docs/_build
 docs/api
+.DS_Store
 
 # Unit test / coverage reports
 .coverage

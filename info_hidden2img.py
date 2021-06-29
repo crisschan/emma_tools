@@ -102,9 +102,9 @@ class InfoHidden2Img(object):
         return data
 
 if __name__=='__main__':
-    infoHidden2Img= InfoHidden2Img('1.jpg')
-    infoHidden2Img.encodeDataInImage('I am CrissChan. I want to build the DevOps.I am the king in this area1').save('2.png')
-    infoHidden2Img2 = InfoHidden2Img('2.png')
+    # infoHidden2Img= InfoHidden2Img('1.jpg')
+    # infoHidden2Img.encodeDataInImage('I am CrissChan. I want to build the DevOps.I am the king in this area1').save('2.png')
+    infoHidden2Img2 = InfoHidden2Img('/Users/crisschan/PycharmProjects/emma_tools/1.png')
     
     print(infoHidden2Img2.decodeImage())
 

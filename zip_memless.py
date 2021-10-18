@@ -6,11 +6,7 @@
 # @File    : zip_memless.py
 # @Intro   ：低内存压缩
 
-
-
 import zipfly
-
-
 
 class ZipMemless(object):
 
@@ -23,17 +19,24 @@ class ZipMemless(object):
                                 },{
                                     'fs': 'home/user/Documents/mercury.mp4',被压缩文件物理位置2
                                     'n': 'movies/mercury.mp4'在压缩包中的全路径2
-                                }]
+                                },]
         :param out_zip: 输出文件.zip的全路径
-        '''
+         '''
         self.paths=paths
         self.out_zip = out_zip
-        self.out_zip(self.paths,self.out_zip)
+        self.__zip()
 
     def __zip(self):
-        zfly = zipfly.ZipFly(paths=paths)
+        zfly = zipfly.ZipFly(paths=self.paths)
         generator = zfly.generator()
-        with open("test.zip", "wb") as f:
+        with open(self.out_zip, "wb") as f:
             for i in generator:
                 f.write(i)
 
+# if __name__ == '__main__':
+#     paths = [{
+#             'fs': 'home/user/Videos/jupiter.mp4',
+#             'n': 'movies/jupiter.mp4'
+#             },]
+#     out_file = '/Users/crisschan/PySpace/1.zip'
+#     ZipMemless(paths,out_file)

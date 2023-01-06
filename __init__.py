@@ -25,6 +25,7 @@
 #               14、workWechat:计算耗时的装饰器封装
 #                   MSGTYPE:message类型
 #               15、ZipMemless:低内存压缩
+#               16、VideoMergeAudio：合并视频和音频
 
 from dict_reduce_deep import Dict2DeepSimpler
 from get_dirAndfiles import DirAndFiles
@@ -43,3 +44,4 @@ from video_change import VideoChange
 from work_webchat_robot import workWechat, MSGTYPE
 from zip_memless import ZipMemless
 from remover import Remover
+from video_merge_audio import VideoMergeAudio

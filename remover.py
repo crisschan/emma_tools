@@ -4,7 +4,7 @@
 # @Author  : CrissChan
 # @Site    : https://blog.csdn.net/crisschan
 # @File    : remove.py
-# @Intro   : 删除所有类型的类
+# @Intro   : 删除文件或者目录
 
 import os
 import shutil

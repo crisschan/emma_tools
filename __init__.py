@@ -45,3 +45,4 @@ from work_webchat_robot import workWechat, MSGTYPE
 from zip_memless import ZipMemless
 from remover import Remover
 from video_merge_audio import VideoMergeAudio
+from merge_audio import MergeAudio

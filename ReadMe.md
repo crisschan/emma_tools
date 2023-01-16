@@ -28,7 +28,7 @@ EMMA_Tools是我自己积累的一些内容，其中有来自网络的，有一�
 |slipt_img|图片切割|
 |stack|栈的操作｜
 |swagger2json|导出swagger到json文件，按照openapi的标准导出|
-｜test_string｜测试需要处理字符串的类，可以通过左右边界找出全部符合的字符串｜
+|test_string|测试需要处理字符串的类，可以通过左右边界找出全部符合的字符串|
 |timer|计算耗时的装饰器封装|
 |ureboot_processer|修改脚本后不用重启服务，调用watchdog不用启动识别修改|
 |video_change|视视频修改码率的，为创建各种不同测试使用的视频文件做准备｜

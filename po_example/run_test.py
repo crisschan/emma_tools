@@ -21,6 +21,7 @@ import unittest
 searchparam = ParamFactory().chooseParam('xls',{'file':searchparam,'sheet':0}).paramAlllineDict()
 
 testSuite = unittest.TestSuite()
+
 testSuite.addTests(HiPOUnit.TestCaseWithClass(TestSearch,param = searchparam))
 Report(testSuite, reportDir, titleReport=reportTitle,descriptionReport=reportDescription)
 #Sendmail(reportDir)

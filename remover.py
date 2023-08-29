@@ -32,7 +32,12 @@ class Remover(object):
         :return:
         '''
 
-        shutil.rmtree(rm_root)
+        
+        try:
+            shutil.rmtree(rm_root)
+            os.makedirs(rm_root)
+        except:
+            return
     @classmethod
     def file(cls,rm_file):
         '''

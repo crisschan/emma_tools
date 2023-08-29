@@ -6,6 +6,7 @@
 # __instruction__=''
 
 from selenium import webdriver
+# from test_case.config.config_path import driver_path
 import unittest
 
 class HiPOUnit(unittest.TestCase):
@@ -20,7 +21,7 @@ class HiPOUnit(unittest.TestCase):
         self.verificationErrors = []
         self.accept_next_alert = True
         # 启动Chrome浏览器并且最大化
-        self.driver = webdriver.Chrome('././driver/chromedriver')
+        self.driver = webdriver.Chrome('/Users/crisschan/workspace/PySpace/emma_tools/po_example/driver/chromedriver')
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 

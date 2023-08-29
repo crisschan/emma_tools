@@ -7,5 +7,5 @@
 #__mtime__ = '2018/2/12'
 #__instruction__=''
 
-driver_path='././driver/chromedriver'
+driver_path='/Users/crisschan/workspace/PySpace/emma_tools/po_example/driver/chromedriver'
 #driver_path='/root/script/driver/phantomjs'

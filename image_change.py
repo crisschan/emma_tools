@@ -9,6 +9,9 @@
 
 from PIL import Image
 import os
+from skimage import io
+import random
+import numpy as np
 class ImageChange(object):
     def __init__(self,image_file,image_path):
         '''
@@ -69,7 +72,34 @@ class ImageChange(object):
             out.save(output_image)
             return True
         else:
+            return False     
+    def slatpepper_noise(self) -> bool:
+        '''
+        给图片添加添加椒盐噪声，椒盐噪声也称为脉冲噪声，是图像常见的一种噪声，为随机出现的白点或者黑点，可能是亮的区域有黑色像素或是在暗的区域有白色像素（或是两者皆有）。
+        :return:True：成功 False：失败
+        '''
+
+        if self.is_valid(self.image_path + self.image_file):
+            str = self.image_file.rsplit(".", 1)
+            output_image = self.image_path + str[0] + '.' + str[1]
+            image = io.imread(self.image_path + self.image_file)
+            img = image.astype(np.uint16)
+            mu = 0
+            sigma = 10
+            
+            for i in range(img.shape[0]):
+                for j in range(img.shape[1]):
+                    for k in range(img.shape[2]):
+                           img[i,j,k] = img[i,j,k] +random.gauss(mu=mu,sigma=sigma)
+                           img[img>255] = 255
+                           img[img<0] = 0
+                           img = img.astype(np.uint8)
+            io.imsave(output_image, img)
+            return True
+        else:
             return False
+
+
 if __name__ == '__main__':
 
 

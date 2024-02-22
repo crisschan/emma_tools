@@ -16,7 +16,7 @@ EMMA_Tools是我自己积累的一些内容，其中有来自网络的，有一�
 |git_distance|计算两经纬度间的距离|
 |global_menager|项目级的全局变量管理器，通过global定义全局字典，完成项目的全局变量的定义|
 |httpstat|httpstat 应该是一个 python 封装后的 curl 工具能够展现 一些客户端连接网站的时间消耗，最近在看tls 感觉挺有用处的 简单学习一下|
-|image_change|图片的转换类|
+|image_change|图片的转换类，包含了转换图片格式\改变图片高宽像素大小\添加噪音等|
 |img2Base63|将图片变成base64编码，然后在web中打开，不用引入图片外部图片文件|
 |info_hidden2img|将信息隐藏到图片中|
 |init_test_json|生成测试要用的json|

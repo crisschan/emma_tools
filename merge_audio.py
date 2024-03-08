@@ -29,7 +29,7 @@ class MergeAudio(object):
         self.audio_list = audio_list
         self.output_audio = output_audio
         pass
-    def merge_audio(self):
+    def merge(self):
         '''
         @des  :合并音频文件
                
@@ -51,4 +51,4 @@ class MergeAudio(object):
 if __name__ == '__main__':
     alist = ['1.flac','2.flac','3.flac','4.flac','5.flac']
     merge_audio = MergeAudio(alist)
-    merge_audio.merge_audio()
+    merge_audio.merge()

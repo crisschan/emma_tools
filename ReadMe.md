@@ -10,7 +10,6 @@ EMMA_Tools是我自己积累的一些内容，其中有来自网络的，有一�
 
 |  文件名   | 功能描述  |
 |  ----  | ----  |
-|hi_po_Exp  | hi_po基于Selenium3.0的PO模式的WebUI测试框架 |
 |dict_reduce_deep  | 将一个深度非常深的嵌套非常多的dict变成深度为1的dict（无嵌套的） |
 |get_dirAndfiles|获取各种目录文件|
 |git_distance|计算两经纬度间的距离|
